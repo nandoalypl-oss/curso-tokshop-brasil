@@ -1,0 +1,385 @@
+/* ============================================
+   TOKSHOP BRASIL — REVIEW ARTICLE STYLESHEET
+   Aesthetic: Editorial luxury / warm gold tones
+   ============================================ */
+
+:root {
+  --gold: #C9972A;
+  --gold-light: #F0C55A;
+  --dark: #1A1209;
+  --ink: #2C2012;
+  --cream: #FAF6EE;
+  --warm-gray: #F3EDE0;
+  --mid: #8A7055;
+  --border: #E5D9C0;
+  --cta-bg: #C9972A;
+  --cta-hover: #A87820;
+  --star: #F5B800;
+  --radius: 12px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── BREADCRUMB ─── */
+.breadcrumb {
+  background: var(--warm-gray);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1.5rem;
+  font-size: 0.82rem;
+  color: var(--mid);
+}
+.breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.breadcrumb a { color: var(--gold); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ─── ARTICLE CONTAINER ─── */
+.article-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* ─── HEADER ─── */
+.article-header {
+  margin-bottom: 2.5rem;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  line-height: 1.25;
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--mid);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.author-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.author-mini img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+.author-mini span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--dark);
+}
+.author-mini small {
+  font-size: 0.8rem;
+  color: var(--mid);
+}
+
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--mid);
+}
+.stars { color: var(--star); font-size: 1.1rem; }
+
+/* ─── SUMMARY BOX ─── */
+.summary-box {
+  background: var(--warm-gray);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+.summary-box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--dark);
+  margin-bottom: 0.8rem;
+  border: none;
+  padding: 0;
+}
+.summary-box ol {
+  padding-left: 1.2rem;
+  font-size: 0.92rem;
+}
+.summary-box li { margin-bottom: 0.3rem; }
+.summary-box a { color: var(--gold); text-decoration: none; }
+.summary-box a:hover { text-decoration: underline; }
+
+/* ─── HEADINGS ─── */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  color: var(--dark);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--dark);
+  margin: 1.5rem 0 0.6rem;
+  font-weight: 700;
+}
+
+/* ─── PARAGRAPHS ─── */
+p {
+  margin-bottom: 1.2rem;
+  color: var(--ink);
+}
+
+a { color: var(--gold); }
+
+strong { color: var(--dark); }
+
+/* ─── CTA BOX ─── */
+.cta-box {
+  background: linear-gradient(135deg, #1A1209 0%, #2E1E08 100%);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin: 2.5rem 0;
+  border: 1px solid var(--gold);
+}
+.cta-box p {
+  color: #F0C55A;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.cta-box small {
+  display: block;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white !important;
+  text-decoration: none;
+  padding: 1rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+  font-family: 'Playfair Display', serif;
+}
+.cta-btn:hover {
+  background: var(--cta-hover);
+  transform: translateY(-2px);
+}
+
+/* ─── PRICE BOX ─── */
+.price-box {
+  background: var(--warm-gray);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.price-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+  margin-bottom: 0.3rem;
+}
+.price-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: var(--dark);
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.price-main span {
+  font-size: 1rem;
+  color: var(--mid);
+  font-family: 'Source Serif 4', serif;
+  font-weight: 400;
+}
+.price-installment {
+  color: var(--mid);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ─── FAQ ─── */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 0;
+}
+.faq-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+.faq-item p { margin-bottom: 0; }
+
+/* ─── RATING FINAL ─── */
+.rating-final {
+  text-align: center;
+  background: var(--warm-gray);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+.rating-final p { margin-bottom: 0.3rem; color: var(--mid); }
+.stars-lg {
+  font-size: 2.5rem;
+  color: var(--star);
+  line-height: 1;
+  display: block;
+  margin: 0.3rem 0;
+}
+
+/* ─── AUTHOR BOX ─── */
+.author-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--warm-gray);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-top: 3rem;
+  border: 1px solid var(--border);
+}
+.author-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--gold);
+  flex-shrink: 0;
+}
+.author-box h2 {
+  font-size: 1.2rem;
+  border: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+.author-box p {
+  font-size: 0.9rem;
+  color: var(--mid);
+  margin-bottom: 0.6rem;
+}
+
+/* ─── DISCLAIMER ─── */
+.disclaimer {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--warm-gray);
+  border-radius: 8px;
+  border-left: 3px solid var(--mid);
+  font-size: 0.82rem;
+  color: var(--mid);
+}
+.disclaimer p { margin: 0; }
+
+/* ─── TAGS ─── */
+.tags-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.tags-footer h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600;
+  border: none;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tags span {
+  background: var(--warm-gray);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.78rem;
+  color: var(--mid);
+  transition: border-color 0.2s, color 0.2s;
+  cursor: default;
+}
+.tags span:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 600px) {
+  .author-box { flex-direction: column; }
+  .article-meta { flex-direction: column; align-items: flex-start; }
+  .price-main { font-size: 2rem; }
+  h1 { font-size: 1.5rem; }
+}
