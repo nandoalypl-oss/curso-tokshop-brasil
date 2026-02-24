@@ -41,6 +41,12 @@
       "@type": "Product",
       "name": "Curso TokShop Brasil",
       "description": "Treinamento completo para faturar com TikTok Shop usando vídeos dark e inteligência artificial, sem precisar aparecer nos vídeos.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://i.ibb.co/0RVBfZ73/karine.jpg",
+        "width": 400,
+        "height": 400
+      },
       "brand": {
         "@type": "Brand",
         "name": "TokShop Brasil"
@@ -50,7 +56,42 @@
         "price": "197.00",
         "priceCurrency": "BRL",
         "availability": "https://schema.org/InStock",
-        "url": "https://omeulink.com/curso-tokshop-brasil"
+        "url": "https://omeulink.com/curso-tokshop-brasil",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "BR",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 7,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "BRL"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            }
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "BR"
+          }
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
